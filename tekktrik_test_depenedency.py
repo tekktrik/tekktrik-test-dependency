@@ -7,3 +7,6 @@ def printaroo(thing: Any) -> None:
 def printyprinty(thing: Any) -> None:
     for _ in range(2):
         print(thing)
+        
+def noprint(thing: Any) -> None:
+    pass
