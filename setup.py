@@ -11,11 +11,23 @@ https://github.com/pypa/sampleproject
 
 from setuptools import setup, find_packages
 
+# To use a consistent encoding
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+
+# Get the long description from the README file
+with open(path.join(here, "README.rst"), encoding="utf-8") as f:
+    long_description = f.read()
+
 setup(
     name="tekktrik-test-dependency",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
     description="Test dependency for testing Dependabot",
+    long_description=long_description,
+    long_description_content_type="text/x-rst",
     # The project's main homepage.
     url="https://github.com/tekktrik/tekktrik-test-dependency",
     # Author details
