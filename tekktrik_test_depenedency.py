@@ -12,4 +12,5 @@ def noprint(thing: Any) -> None:
     pass
 
 def printonlytype(thing: Any) -> None:
+    print("In printonlytype...")
     print("type:", type(thing))
