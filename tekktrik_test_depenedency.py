@@ -5,4 +5,4 @@ def printaroo(thing: Any) -> None:
     print("thing:", thing)
     print("and then...")
     print("!")
-    print("Ending...")
+    print("Ending now...")
