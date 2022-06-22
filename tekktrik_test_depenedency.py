@@ -10,3 +10,6 @@ def printyprinty(thing: Any) -> None:
         
 def noprint(thing: Any) -> None:
     pass
+
+def printonlytype(thing: Any) -> None:
+    print("type:", type(thing))
